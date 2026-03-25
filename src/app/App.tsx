@@ -8,12 +8,12 @@ import { FiveYearRoadmap } from "@/app/components/FiveYearRoadmap";
 import { HICGanttChart } from "@/app/components/HICGanttChart";
 import { HICSection } from "@/app/components/HICSection";
 import { useState } from "react";
-import nextAvailableCounselorImg from "figma:asset/e5a72e1836c4ccd8e214c6d20f7afcf4beb5a7bd.png";
-import mentalHealthDashboardImg from "figma:asset/e5de65f56976868db5b3848db4b4409feb02aa17.png";
-import dependentRegistrationImg from "figma:asset/8c482eec0878062b1ba5cecd4c28a1a0a6d8b5ba.png";
-import guidedInteractionsImg from "figma:asset/4121acf4a22eb6f70f77d136e1c7bc8c0639e6b2.png";
-import personalizedDashboardImg from "figma:asset/b26ef51ce6e26f34c77f78015dee872bec97d1c1.png";
-import carePathwaysImg from "figma:asset/8b9e8c5aa647b3c51b1585172cae8934cd08c823.png";
+import nextAvailableCounselorImg from "assets2\e5a72e1836c4ccd8e214c6d20f7afcf4beb5a7bd.png";
+import mentalHealthDashboardImg from "assets2\e5de65f56976868db5b3848db4b4409feb02aa17.png";
+import dependentRegistrationImg from "assets2\8c482eec0878062b1ba5cecd4c28a1a0a6d8b5ba.png";
+import guidedInteractionsImg from "assets2\4121acf4a22eb6f70f77d136e1c7bc8c0639e6b2.png";
+import personalizedDashboardImg from "assets2\b26ef51ce6e26f34c77f78015dee872bec97d1c1.png";
+import carePathwaysImg from "assets2\8b9e8c5aa647b3c51b1585172cae8934cd08c823.png";
 
 // Deliverables with embedded metrics
 const deliverables = [
