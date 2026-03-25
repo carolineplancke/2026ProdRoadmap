@@ -43,6 +43,7 @@ export function FiveYearRoadmap() {
             <TimelineItem text="Digital Pharmacy Order Status" />
             <TimelineItem text="Enhanced Health Outcomes Report: Women's Health*" />
             <TimelineItem text="Plan Sponsor Portal - Health" />
+            <TimelineItem text="MFA in GS+ for PLan Members and Plan Sponsors" />
           </div>
         </div>
 
@@ -84,7 +85,6 @@ export function FiveYearRoadmap() {
             Q4
           </div>
           <div className="space-y-3">
-            <TimelineItem text="Adaptive Universal Search" />
             <TimelineItem text="Dynamic Personalized Dashboard" />
             <TimelineItem text="Personalized Care Pathways" />
             <TimelineItem text="Enhanced Health Outcomes Report: Metabolic Health*" />
