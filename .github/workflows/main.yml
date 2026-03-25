@@ -1,23 +1,26 @@
-name: Node Install
+name: Generate package-lock.json
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
+  workflow_dispatch:
 
 jobs:
-  build:
+  lockfile:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # 🚫 NO cache here
 
-      - name: Install dependencies
+      - name: Generate lockfile
         run: npm install
+
+      - name: Commit lockfile
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add package-lock.json
+          git commit -m "Add package-lock.json"
+          git push
