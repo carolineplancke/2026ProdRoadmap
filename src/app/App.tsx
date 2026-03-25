@@ -18,7 +18,7 @@ import carePathwaysImg from "@/assets2/8b9e8c5aa647b3c51b1585172cae8934cd08c823.
 // Deliverables with embedded metrics
 const deliverables = [
   {
-    title: "Next Available Counsellor",
+    title: "Mental Health: Next Available Counsellor Flow",
     quarter: "Q1",
     director: "Matt Parks",
     problem:
@@ -164,14 +164,6 @@ const roadmapData = [
   },
   {
     id: "q1-2",
-    title: "Focus on Aging: GreenShield + Discover",
-    description:
-      "Comprehensive support for aging members, integrating GreenShield benefits with Discover resources for holistic care.",
-    quarter: 1,
-    track: "Member Engagement",
-  },
-  {
-    id: "q1-3",
     title: "Well-Being: Corporate Challenges",
     description:
       "Interactive corporate challenges designed to drive employee engagement, team building, and overall well-being.",
@@ -179,18 +171,18 @@ const roadmapData = [
     track: "Member Engagement",
   },
   {
-    id: "q1-4",
-    title: "Premium Outcome Report: Mental Health",
+    id: "q1-3",
+    title: "Enhanced Health Outcomes Report: Mental Health*",
     description:
       "Detailed reporting on mental health outcomes and ROI for plan sponsors, highlighting care effectiveness.",
     quarter: 1,
     track: "Personalization",
   },
     {
-    id: "q1-5",
-    title: "Travel Insurance: MGA",
+    id: "q1-4",
+    title: "Travel Insurance: MGA TEST AGAIN",
     description:
-      "Placeholder",
+      " ",
     quarter: 1,
     track: "Insurance",
   },
