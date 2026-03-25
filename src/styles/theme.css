@@ -1,0 +1,273 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  /* Typography sizes */
+  --text-h1: 36px;
+  --text-h2: 30px;
+  --text-h3: 25px;
+  --text-h4: 19px;
+  --text-base: 17px;
+  --text-label: 15px;
+  
+  /* Font weights */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  
+  /* The default background color for the application. */
+  --background: rgba(255, 255, 255, 1.00);
+  /* The default color for elements or text that appears on top of the background. */
+  --foreground: rgba(48, 51, 51, 1.00);
+  /* The background color for cards, modals, and other containers. */
+  --card: rgba(255, 255, 255, 1.00);
+  /* The default color for text or elements that appear on top of cards, modals and other background containers. */
+  --card-foreground: rgba(48, 51, 51, 1.00);
+  /* The background color for dropdowns and tooltips. */
+  --popover: rgba(255, 255, 255, 1.00);
+  /* The default color for text or elements that appear on top of dropdowns and tooltips. */
+  --popover-foreground: rgba(48, 51, 51, 1.00);
+  /* The primary color used for buttons, links, and other interactive elements. */
+  --primary: rgba(0, 0, 0, 1.00);
+  /* The default color for text or elements that appear on top of primary colored elements. */
+  --primary-foreground: rgba(237, 242, 242, 1.00);
+  /* The secondary color used for secondary(but NOT-DESTRUCTIVE) buttons and interactive elements. */
+  --secondary: rgba(157, 198, 215, 1.00);
+  /* The default color for text or elements that appear on top of secondary colored elements. */
+  --secondary-foreground: rgba(3, 74, 104, 1.00);
+  /* The muted color used for less prominent elements, such as disabled buttons or disabled text. */
+  --muted: rgba(0, 0, 0, 0);
+  /* The default color for text or elements that appear on top of muted colored elements. */
+  --muted-foreground: rgba(176, 191, 191, 1.00);
+  /* The accent color used for highlights, links, and other interactive elements. */
+  --accent: rgba(9, 112, 156, 1.00);
+  /* The default color for text or elements that appear on top of accent colored elements. */
+  --accent-foreground: rgba(255, 255, 255, 1.00);
+  /* The color used for background in destructive actions, such as delete buttons or error messages. */
+  --destructive: rgba(242, 230, 232, 1.00);
+  /* The default color for text or elements that appear on top of destructive colored elements. */
+  --destructive-foreground: rgba(139, 9, 26, 1.00);
+  /* The default border color for elements such as inputs, buttons, and other containers. */
+  --border: rgba(208, 219, 219, 1.00);
+  /* The default background color for input fields once the text has been filled. Should be either transparent or match the input-background. */
+  --input: rgba(255, 255, 255, 1.00);
+  /* The default background color for input fields, text areas, and other input elements. */
+  --input-background: rgba(255, 255, 255, 1.00);
+  /* The color for focus rings, outlines, and other focus indicators. */
+  --ring: rgba(9, 112, 156, 1.00);
+  /* Shadow for small elevations, such as cards or modals. */
+  --elevation-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* The color for chart elements, such as a bar or line in a chart. */
+  --chart-1: rgba(9, 112, 156, 1.00);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-2: rgba(0, 84, 78, 1.00);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-3: rgba(48, 133, 64, 1.00);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-4: rgba(157, 198, 215, 1.00);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-5: rgba(176, 191, 191, 1.00);
+  /* The brand dark green color used for GreenShield+ branding and headers. */
+  --brand-dark-green: rgba(0, 55, 58, 1.00);
+  /* Brand color: Green Insurance for HIC categories. */
+  --brand-green-insurance: rgba(48, 133, 64, 1.00);
+  /* Brand color: Blue Health for HIC categories. */
+  --brand-blue-health: rgba(60, 100, 178, 1.00);
+  /* Brand color: Grey Administration for HIC categories. */
+  --brand-grey-admin: rgba(109, 119, 131, 1.00);
+  /* Brand color: Purple Analytics for Data & Analytics section. */
+  --brand-purple-analytics: rgba(124, 58, 237, 1.00);
+  /* Status colors for RAG (Red, Amber, Green) indicators */
+  --status-green: rgba(34, 197, 94, 1.00);
+  --status-amber: rgba(251, 146, 60, 1.00);
+  --status-red: rgba(239, 68, 68, 1.00);
+  /* The default border radius for elements such as buttons, tooltip, and other containers. */
+  --radius: 8px;
+  /* The border radius for button elements. */
+  --radius-button: 999px;
+  /* The border radius for card elements. */
+  --radius-card: 12px;
+  /* Spacing values */
+  --spacing-32: 80px;
+  --spacing-48: 120px;
+  /* The background color for sidebars, navigation menus, and other persistent elements. */
+  --sidebar: rgba(255, 255, 255, 1.00);
+  /* The default color for text or elements that appear on top of sidebars, navigation menus, and other persistent elements. */
+  --sidebar-foreground: rgba(84, 89, 89, 1.00);
+  /* The primary color used for buttons, links, and other interactive elements in sidebars and navigation menus. */
+  --sidebar-primary: rgba(0, 84, 78, 1.00);
+  /* The default color for text or elements that appear on top of primary colored elements in sidebars and navigation menus. */
+  --sidebar-primary-foreground: rgba(255, 255, 255, 1.00);
+  /* The accent color used for highlights, links, and other interactive elements in sidebars and navigation menus. */
+  --sidebar-accent: rgba(9, 112, 156, 1.00);
+  /* The default color for text or elements that appear on top of accent colored elements in sidebars and navigation menus. */
+  --sidebar-accent-foreground: rgba(255, 255, 255, 1.00);
+  /* The default border color for elements in sidebars and navigation menus. */
+  --sidebar-border: rgba(208, 219, 219, 1.00);
+  /* The default color for focus rings, outlines, and other focus indicators in sidebars and navigation menus. */
+  --sidebar-ring: rgba(9, 112, 156, 1.00);
+}
+
+.dark {
+  --background: rgba(48, 51, 51, 1.00);
+  --foreground: rgba(255, 255, 255, 1.00);
+  --card: rgba(48, 51, 51, 1.00);
+  --card-foreground: rgba(255, 255, 255, 1.00);
+  --popover: rgba(48, 51, 51, 1.00);
+  --popover-foreground: rgba(255, 255, 255, 1.00);
+  --primary: rgba(255, 255, 255, 1.00);
+  --primary-foreground: rgba(48, 51, 51, 1.00);
+  --secondary: rgba(9, 112, 156, 1.00);
+  --secondary-foreground: rgba(255, 255, 255, 1.00);
+  --muted: rgba(84, 89, 89, 1.00);
+  --muted-foreground: rgba(176, 191, 191, 1.00);
+  --accent: rgba(157, 198, 215, 1.00);
+  --accent-foreground: rgba(48, 51, 51, 1.00);
+  --destructive: rgba(139, 9, 26, 1.00);
+  --destructive-foreground: rgba(255, 255, 255, 1.00);
+  --border: rgba(84, 89, 89, 1.00);
+  --input: rgba(84, 89, 89, 1.00);
+  --input-background: rgba(84, 89, 89, 1.00);
+  --ring: rgba(157, 198, 215, 1.00);
+  --sidebar: rgba(48, 51, 51, 1.00);
+  --sidebar-foreground: rgba(255, 255, 255, 1.00);
+  --sidebar-primary: rgba(9, 112, 156, 1.00);
+  --sidebar-primary-foreground: rgba(255, 255, 255, 1.00);
+  --sidebar-accent: rgba(157, 198, 215, 1.00);
+  --sidebar-accent-foreground: rgba(48, 51, 51, 1.00);
+  --sidebar-border: rgba(84, 89, 89, 1.00);
+  --sidebar-ring: rgba(157, 198, 215, 1.00);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-brand-dark-green: var(--brand-dark-green);
+  --color-brand-green-insurance: var(--brand-green-insurance);
+  --color-brand-blue-health: var(--brand-blue-health);
+  --color-brand-grey-admin: var(--brand-grey-admin);
+  --color-brand-purple-analytics: var(--brand-purple-analytics);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-card);
+  --radius-xl: calc(var(--radius-card) + 4px);
+  --radius-button: var(--radius-button);
+  --radius-card: var(--radius-card);
+  --shadow-sm: var(--elevation-sm);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Gilroy', sans-serif;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-h1);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-h2);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-h3);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-h4);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    p {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    label {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-label);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    button {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-family: 'Gilroy', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: 'Gilroy', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Smooth scroll for parallax effects */
+body {
+  overflow-x: hidden;
+}
