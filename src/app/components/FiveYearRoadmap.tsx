@@ -43,7 +43,7 @@ export function FiveYearRoadmap() {
             <TimelineItem text="Digital Pharmacy Order Status" />
             <TimelineItem text="Enhanced Health Outcomes Report: Women's Health*" />
             <TimelineItem text="Plan Sponsor Portal - Health" />
-            <TimelineItem text="MFA in GS+ for PLan Members and Plan Sponsors" />
+            <TimelineItem text="MFA in GS+ for Plan Members and Plan Sponsors" />
           </div>
         </div>
 
@@ -65,7 +65,6 @@ export function FiveYearRoadmap() {
             <TimelineItem text="Launch of CSaaS, with integrated chat agents" />
             <TimelineItem text="Dependent Invitation Flow" />
             <TimelineItem text="Wellbeing Engagement Notifications" />
-            <TimelineItem text="Deliver Sales ROI calculator" />
             <TimelineItem text="Enhanced Health Outcomes Report: Men's Health*" />
             <TimelineItem text="Group Conversion" />
           </div>
